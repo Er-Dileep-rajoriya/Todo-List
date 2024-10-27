@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="heading">To-Do List</h1>
+
+    <form id="form">
+      <input type="text" name="name" id="name" placeholder="Item Name" />
+
+      <input type="date" name="date" id="date" />
+
+      <select name="priority" id="priority">
+        <option value="" disabled>Priority</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+
+      <button type="submit">Add Item</button>
+    </form>
+
+    <!-- Today’s TodoList -->
+    <div class="task-list">
+      <h2 class="list-heading">Today’s TodoList</h2>
+
+      <div class="list-container" id="today-list">
+        <!-- <div class="list">
+          <span>1. Task Name</span>
+          <span>26/05/2001</span>
+          <span>High</span>
+          <span>
+            <i class="fa-regular fa-circle-check"></i>
+            &nbsp;
+            <i class="fa-solid fa-trash"></i>
+          </span>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Future TodoList -->
+    <div class="task-list">
+      <h2 class="list-heading">Future TodoList</h2>
+
+      <div class="list-container">
+        <!-- <div class="list">
+          <span>1. Task Name</span>
+          <span>26/05/2001</span>
+          <span>High</span>
+          <span>
+            <i class="fa-regular fa-circle-check"></i>
+            &nbsp;
+            <i class="fa-solid fa-trash"></i>
+          </span>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Completed TodoList -->
+    <div class="task-list">
+      <h2 class="list-heading">Completed TodoList</h2>
+
+      <div class="list-container">
+        <!-- <div class="list">
+          <span>1. Task Name</span>
+          <span>26/05/2001</span>
+          <span>High</span>
+          <span>
+            <i class="fa-regular fa-circle-check"></i>
+            &nbsp;
+            <i class="fa-solid fa-trash"></i>
+          </span>
+        </div> -->
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/7bc33bb8be.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
